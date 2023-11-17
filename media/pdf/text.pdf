@@ -1,0 +1,7 @@
+The height property sets the height of an element.
+
+The height of an element does not include padding, borders, or margins!
+
+If height: auto; the element will automatically adjust its height to allow its content to be displayed correctly.
+
+If height is set to a numeric value (like pixels, (r)em, percentages) then if the content does not fit within the specified height, it will overflow. How the container will handle the overflowing content is defined by the overflow property.

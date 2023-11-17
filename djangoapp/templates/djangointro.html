@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body style="background-color:skyblue;">
+<center><h1 style="font-size:35px;font-style:italic;"><u>Django Introduction</u></h1></center>
+<p  style="text-align:justify;font-size:30px">Django is a Python-based web framework that allows you to quickly create efficient web applications.
+    It is also called batteries included framework because Django provides built-in features for everything including Django Admin Interface, default database – SQLlite3, etc.
+    When you’re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+    Django gives you ready-made components to use and that too for rapid development.</p>
+<img src="{% static 'softtoy.jpg' %}" height="200px" width="200px">
+
+<br>
+<a href="{% static 'function_prgrm_qest.pdf' %}"download>Programlist</a><br><br>
+<audio controls>
+<source src="{% static 'apna banale piya.mp3' %}">
+</audio><br><br>
+
+<video controls height="200px" width="200px"><source src="{% static 'vdo.mp4' %}">
+
+</video>
+
+
+
+</body>
+</html>

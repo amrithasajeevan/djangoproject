@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Edit profile page</h1>
+<form method="post">{% csrf_token %}
+    <label>firstname</label>
+    <input type="text" name="firstname" value="{{data.fname}}"><br><br>
+    <label>lastname</label>
+    <input type="text" name="lastname" value="{{data.lname}}"><br><br>
+    <label>username</label>
+    <input type="text" name="username" value="{{data.username}}"><br><br>
+    <label>email</label>
+    <input type="email" name="eid" value="{{data.email}}"><br><br>
+    <label>phone</label>
+    <input type="number" name="phone" value="{{data.phone}}"><br><br>
+
+    <p>gender:{{data.gender}}</p>
+    <input type="radio" name="gen" value="female">female<input type="radio" name="gen" value="male">male<br><br>
+    <label>address</label>
+    <textarea name="address" value="{{data.address}}">{{data.address}}</textarea><br><br>
+<!--    <input type="text" name="addr" value="{{data.address}}"><br><br>-->
+
+    <p>date:{{data.dob}}</p>
+    <input type="date" name="dob" value="{{data.dob}}"><br><br>
+
+    <input type="submit" value="update">
+
+
+
+
+</form>
+
+</body>
+</html>

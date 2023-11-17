@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div   class="container" style="height:500px;width:500px;background-color:pink;">
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <h1>File Upload</h1>
+    <table>
+        <tr>
+            <th><label class="form-label">Audio Name</label></th>
+            <td><input class="form-control" name="adonm" type="text"></td>
+        </tr>
+        <tr>
+            <th><label class="form-label">Audio File</label></th>
+            <td><input class="form-control" name="ado" type="file"></td>
+        </tr>
+
+
+        <tr>
+            <th><label class="form-label">Video Name</label></th>
+            <td><input class="form-control" name="vdo" type="text"></td>
+        </tr>
+
+        <tr>
+            <th><label class="form-label">Video File</label></th>
+            <td><input class="form-control" name="vdofile" type="file"></td>
+        </tr>
+
+        <tr>
+            <th><label class="form-label">Pdf name</label></th>
+            <td><input class="form-control" name="pdfnm" type="text"></td>
+        </tr>
+
+          <tr>
+            <th><label class="form-label">Pdf file</label></th>
+            <td><input class="form-control" name="pdf" type="file"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+
+</form>
+    </div>
+</body>
+</html>

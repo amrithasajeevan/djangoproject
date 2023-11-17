@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+   <label>Audio Name</label>
+   <input type="text" name="aname" value="{{data.audionm}}"><br><br>
+    <label>Audio</label>
+    <audio controls> <source src="{% static adio %}"></audio>
+    <input type="file" name="audioo" value="{{data.aud}}"><br><br>
+
+    <label>Video Name</label>
+   <input type="text" name="vname" value="{{data.vdoname}}"><br><br>
+    <label>Video</label>&nbsp;&nbsp;
+
+    <video controls width="200px" height="200px"><source src="{% static vdeo %}" ></video>
+    &nbsp;&nbsp;<input type="file" name="videoo" value="{{data.vdo}}"><br><br>
+
+    <label>Pdf Name</label>
+   <input type="text" name="pname" value="{{data.pdfname}}"><br><br>
+    <label>Pdf</label>
+    &nbsp;&nbsp;<a href="{% static pdfa %}">view pdf</a>
+
+    &nbsp;&nbsp;<input type="file" name="pdf1" value="{{data.pdf}}"><br><br>
+    <input type="submit" value="submit">
+
+</form>
+
+</body>
+</html>
